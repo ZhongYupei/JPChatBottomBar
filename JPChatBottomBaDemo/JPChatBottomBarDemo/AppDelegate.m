@@ -23,6 +23,8 @@
     UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
+    
+    NSLog(@"%@",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject]);
     return YES;
 }
 

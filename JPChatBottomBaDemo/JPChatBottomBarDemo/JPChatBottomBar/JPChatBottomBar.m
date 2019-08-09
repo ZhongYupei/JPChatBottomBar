@@ -96,13 +96,9 @@ NSString * const MsgAgentViewHeightInfoKey = @"TextViewContentHeightInfoKey";
             if(wSelf.agent && [wSelf.agent respondsToSelector:@selector(msgEditAgentAudio:)]){
                 [wSelf.agent msgEditAgentAudio:audioData];
             }
-            if(wSelf.msgEditAgentAudioBlock){
-                wSelf.msgEditAgentAudioBlock(audioData);
-            }
         };
+        /// 语音的强度
         self.audioPowerStr = @"";
-        // 添加kvo
-       [self addObserver:self forKeyPath:@"audioPowerStr" options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew context:nil];
     }
     return _audioView;
 }
@@ -249,9 +245,7 @@ NSString * const MsgAgentViewHeightInfoKey = @"TextViewContentHeightInfoKey";
     if(self.agent && [self.agent respondsToSelector:@selector(msgEditAgentSendText:)]){
         [self.agent msgEditAgentSendText:self.textView.text];
     }
-    if(self.msgEditAgentTextBlock){
-        self.msgEditAgentTextBlock(self.textView.text);
-    }
+ 
     self.textView.text = @"";
     [self textViewDidChange:self.textView];
 }
@@ -402,7 +396,7 @@ NSString * const MsgAgentViewHeightInfoKey = @"TextViewContentHeightInfoKey";
         _currentTextViewHeight =  _btnWH ;
         _currentTextViewContentHeight = self.textView.contentSize.height;
         _keyBoardState = JPKeyBoardStateNone;
-        _emojiIV = [self emojiIV];
+//        _emojiIV = [self emojiIV];
     }
     return self;
 }
@@ -426,31 +420,32 @@ NSString * const MsgAgentViewHeightInfoKey = @"TextViewContentHeightInfoKey";
 #pragma mark Other
 - (void) jpHelperRecorderStuffWhenRecordWithAudioPower:(CGFloat)power{
     NSLog(@"%f",power);
-    self.audioPowerStr = [NSString stringWithFormat:@"%f",[self.helper audioPower]];
+    NSString * newPowerStr =[NSString stringWithFormat:@"%f",[self.helper audioPower]];
+    if([newPowerStr floatValue] > [self.audioPowerStr floatValue]) {
+        if(imageIndex == 6){
+            return;
+        }
+        imageIndex ++;
+    }else {
+        if(imageIndex == 1){
+            return;
+        }
+        imageIndex --;
+    }
+    if(self.audioView.state == JPPressingStateUp) {
+        self.audioView.pressingDown();
+    }
+    
+    self.audioPowerStr =  newPowerStr;;
 }
 // kvo: audioPower 值发送变化的时候调用
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
-    if([keyPath isEqualToString:@"audioPowerStr"] && object == self ){
-        NSString * oldValue = [change valueForKey:@"old"];
-        NSString * freshValue = [change valueForKey:@"new"];
-        if([oldValue floatValue] > [freshValue floatValue]){
-            if(imageIndex == 1){
-                return;
-            }
-            imageIndex -- ;
-            self.audioView.pressingDown();
-        }else {
-            if(imageIndex == 6){
-                return;
-            }
-            imageIndex ++;
-            self.audioView.pressingDown();
-        }
-    }else if([keyPath isEqualToString:@"inputView"] && object == self.textView ){
+    if([keyPath isEqualToString:@"inputView"] && object == self.textView ){
         UIView * freshView = [change objectForKey:@"new"];
         if(![freshView isKindOfClass:[NSNull class]] && self.keyBoardState != JPKeyBoardStateTextView) {
             // 切换成了非textView的模式
             self.textView.editable = YES;
+            
             [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
             [UIView animateWithDuration:0.3 animations:^{
                 self.superview.y =  - freshView.height;

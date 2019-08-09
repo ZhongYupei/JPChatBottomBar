@@ -73,6 +73,7 @@
 		6BD6DE4B22FD5B8A00E9C833 /* JPEmojiPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DE4922FD5B8A00E9C833 /* JPEmojiPreview.m */; };
 		6BD6DE4C22FD5B8A00E9C833 /* JPGIfPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DE4A22FD5B8A00E9C833 /* JPGIfPreview.m */; };
 		6BD6DE4F22FD5B8F00E9C833 /* JPAudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DE4E22FD5B8F00E9C833 /* JPAudioView.m */; };
+		6BD6DE5422FDBE6400E9C833 /* JPEmojiBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DE5322FDBE6400E9C833 /* JPEmojiBtn.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -186,6 +187,8 @@
 		6BD6DE4A22FD5B8A00E9C833 /* JPGIfPreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPGIfPreview.m; sourceTree = "<group>"; };
 		6BD6DE4D22FD5B8E00E9C833 /* JPAudioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPAudioView.h; sourceTree = "<group>"; };
 		6BD6DE4E22FD5B8F00E9C833 /* JPAudioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPAudioView.m; sourceTree = "<group>"; };
+		6BD6DE5222FDBE6400E9C833 /* JPEmojiBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPEmojiBtn.h; sourceTree = "<group>"; };
+		6BD6DE5322FDBE6400E9C833 /* JPEmojiBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPEmojiBtn.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -388,6 +391,8 @@
 				6BD6DE3222FD5B5A00E9C833 /* JPLargeEmojiCVCell.h */,
 				6BD6DE2C22FD5B5A00E9C833 /* JPLargeEmojiCVCell.m */,
 				6BD6DE2D22FD5B5A00E9C833 /* JPLargeEmojiCVCell.xib */,
+				6BD6DE5222FDBE6400E9C833 /* JPEmojiBtn.h */,
+				6BD6DE5322FDBE6400E9C833 /* JPEmojiBtn.m */,
 			);
 			path = emoji;
 			sourceTree = "<group>";
@@ -599,6 +604,7 @@
 				6BD6DD9522FD59FC00E9C833 /* main.m in Sources */,
 				6BD6DE3322FD5B5A00E9C833 /* JPEmojiInputView.m in Sources */,
 				6BD6DE4422FD5B6A00E9C833 /* JPMoreCVCell.m in Sources */,
+				6BD6DE5422FDBE6400E9C833 /* JPEmojiBtn.m in Sources */,
 				6BD6DD8722FD59FB00E9C833 /* AppDelegate.m in Sources */,
 				6BD6DDCE22FD5AEF00E9C833 /* JPEmojiManager.m in Sources */,
 				6BD6DDC422FD5AD600E9C833 /* UIView+JPExtension.m in Sources */,

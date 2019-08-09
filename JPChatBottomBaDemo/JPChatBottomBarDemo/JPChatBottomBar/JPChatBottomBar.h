@@ -55,18 +55,7 @@ OBJC_EXTERN NSString * const MsgAgentViewHeightInfoKey;
 @interface JPChatBottomBar : UIView
 
 @property (assign, nonatomic) JPKeyBoardState keyBoardState;
-/**
- *      用户文本消息
- */
-@property (copy, nonatomic) void (^msgEditAgentTextBlock)(NSString *);
-/**
- *      用户选用的多张图片
- */
-@property (copy, nonatomic) void (^msgEditAgentImageArrBlock)(NSArray <UIImage *>*);
-/**
- *      用户的语音消息
- */
-@property (copy, nonatomic) void (^msgEditAgentAudioBlock)(NSData *);
+
 
 
 @property (assign, nonatomic) id <JPChatBottomBarDelegate> agent;

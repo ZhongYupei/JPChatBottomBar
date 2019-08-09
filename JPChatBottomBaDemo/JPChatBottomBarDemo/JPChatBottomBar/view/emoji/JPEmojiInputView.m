@@ -224,6 +224,7 @@
             self.currentPV.x = CGRectGetMaxX(self.leftPV.frame);
             self.rightPV.x = CGRectGetMaxX(self.currentPV.frame);
             _pastPage = currentIndexAtGroup;
+            
         }else {
             // 向左滑动
             if(currentIndexAtGroup == 0) {

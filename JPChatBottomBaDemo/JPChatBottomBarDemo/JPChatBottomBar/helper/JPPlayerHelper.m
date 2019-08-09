@@ -46,7 +46,7 @@
 
 -(NSTimer *)timer{
     if (!_timer) {
-        _timer=[NSTimer scheduledTimerWithTimeInterval:0.75 target:self selector:@selector(doOutsideStuff) userInfo:nil repeats:YES];
+        _timer=[NSTimer scheduledTimerWithTimeInterval:0.35 target:self selector:@selector(doOutsideStuff) userInfo:nil repeats:YES];
     }
     return _timer;
 }
@@ -75,7 +75,6 @@
     float power = [self.recorder averagePowerForChannel:0];     // 平均值 取得第一个通道的音频，注意音频的强度为[-160,0],0最大
 //    float powerMax = [self.recorder peakPowerForChannel:0];
 //    CGFloat progress = (1.0/160.0) * (power + 160);
-    
     power = power + 160 - 50;
     int dB = 0;
     if (power < 0.f) {

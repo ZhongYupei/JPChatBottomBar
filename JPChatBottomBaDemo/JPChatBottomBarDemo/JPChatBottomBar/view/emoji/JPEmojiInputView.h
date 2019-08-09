@@ -38,7 +38,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (assign, nonatomic) id <JPEmojiInputViewDelegate> delegate;
 
 
-- (instancetype)initWithTextView:(UITextView *)textView;
+- (instancetype)init;;
 
 
 - (void)setEmojiSendBtnEnabledOrNot:(BOOL)enabled;

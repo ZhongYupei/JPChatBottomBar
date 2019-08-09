@@ -13,7 +13,7 @@
 
 @property (strong, nonatomic) UIButton * button;
 @property (strong, nonatomic) UILabel * label;
-@property (strong, nonatomic) NSTimer * timer;
+
 @property (assign, nonatomic) BOOL isPressing;
 
 @property (strong, nonatomic) UIView * voiceView;
@@ -62,22 +62,22 @@
 }
 #pragma mark touchAction
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-     NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(timeAction) userInfo:nil repeats:NO];
-    self.timer = timer;
+    if(self.pressBegin) {
+        self.pressBegin();
+        self.state = JPPressingStateDown;
+    }
+    self.isPressing = YES;
 }
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     if(self.isPressing){
         UITouch * anyTouch = [touches anyObject];
         CGPoint point = [anyTouch locationInView:self];
-
         if(point.y < -50){
-//            JPLog(@"向上滑动");
             if(self.pressingUp){
                 self.pressingUp();
                 self.state = JPPressingStateUp;
             }
         }else {
-//            JPLog(@"向下滑动");
             if(self.pressingDown){
                 self.pressingDown();
                 self.state = JPPressingStateDown;
@@ -92,20 +92,8 @@
         }
     }
     self.isPressing = NO;
-    [self.timer invalidate];
-    self.timer = nil;
 }
 
-- (void)timeAction {
-    
-    if(self.pressBegin) {
-        self.pressBegin();
-        self.state = JPPressingStateDown;
-    }
-    
-    self.isPressing = YES;
-    [self.timer invalidate];
-}
 
 #pragma mark getter
 - (UIView *) voiceView {
