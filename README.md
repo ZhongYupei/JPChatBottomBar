@@ -1,12 +1,5 @@
 # JPChatBottomBar
 
----
-title: 聊天界面从0到1的实现 (二)
-
-date: 2019-08-09 15:12:49
-tags:
-
----
 
 > 今天，我终于更更更更博了。
 > 接着上一篇[聊天界面从0到1的实现 (一)](https://zhongyupei.github.io/2019/07/30/%E8%81%8A%E5%A4%A9%E7%95%8C%E9%9D%A2%E4%BB%8E0%E5%88%B01%E7%9A%84%E5%AE%9E%E7%8E%B0-%E4%B8%80/#more)，
