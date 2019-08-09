@@ -27,6 +27,8 @@
 @implementation ViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [UIApplication sharedApplication].keyWindow.backgroundColor = RGB(230, 230, 230);
+    
     UIBarButtonItem * rightItem = [[UIBarButtonItem alloc] initWithTitle:@"取消" style:UIBarButtonItemStylePlain target:self action:@selector(touch)];
     self.navigationItem.rightBarButtonItem = rightItem;
     self.view.backgroundColor = [UIColor yellowColor];

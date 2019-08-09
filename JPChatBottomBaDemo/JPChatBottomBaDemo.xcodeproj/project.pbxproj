@@ -73,7 +73,6 @@
 		6BD6DE4B22FD5B8A00E9C833 /* JPEmojiPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DE4922FD5B8A00E9C833 /* JPEmojiPreview.m */; };
 		6BD6DE4C22FD5B8A00E9C833 /* JPGIfPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DE4A22FD5B8A00E9C833 /* JPGIfPreview.m */; };
 		6BD6DE4F22FD5B8F00E9C833 /* JPAudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DE4E22FD5B8F00E9C833 /* JPAudioView.m */; };
-		6BD6DE5122FD5BB400E9C833 /* ThirdLib in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DE5022FD5BB400E9C833 /* ThirdLib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -187,7 +186,6 @@
 		6BD6DE4A22FD5B8A00E9C833 /* JPGIfPreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPGIfPreview.m; sourceTree = "<group>"; };
 		6BD6DE4D22FD5B8E00E9C833 /* JPAudioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPAudioView.h; sourceTree = "<group>"; };
 		6BD6DE4E22FD5B8F00E9C833 /* JPAudioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPAudioView.m; sourceTree = "<group>"; };
-		6BD6DE5022FD5BB400E9C833 /* ThirdLib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ThirdLib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,7 +236,6 @@
 		6BD6DD8422FD59FB00E9C833 /* JPChatBottomBaDemo */ = {
 			isa = PBXGroup;
 			children = (
-				6BD6DE5022FD5BB400E9C833 /* ThirdLib */,
 				6BD6DDBD22FD5AA500E9C833 /* JPChatBottomBar */,
 				6BD6DE1822FD5B2C00E9C833 /* JPChatBottomBar.h */,
 				6BD6DE1922FD5B2C00E9C833 /* JPChatBottomBar.m */,
@@ -531,7 +528,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BD6DD9222FD59FC00E9C833 /* LaunchScreen.storyboard in Resources */,
-				6BD6DE5122FD5BB400E9C833 /* ThirdLib in Resources */,
 				6BD6DE0522FD5B2400E9C833 /* gengduo_normal@2x.png in Resources */,
 				6BD6DDFC22FD5B2400E9C833 /* gengduo_normal@3x.png in Resources */,
 				6BD6DD8F22FD59FC00E9C833 /* Assets.xcassets in Resources */,
