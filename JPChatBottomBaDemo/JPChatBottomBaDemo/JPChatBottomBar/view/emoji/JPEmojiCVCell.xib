@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="JPEmojiCVCell" id="gTV-IL-0wX" customClass="JPEmojiCVCell">
+            <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n5S-AY-6PQ">
+                        <rect key="frame" x="6" y="6" width="33" height="33"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="n5S-AY-6PQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="6" id="2xw-5D-pu3"/>
+                <constraint firstAttribute="trailing" secondItem="n5S-AY-6PQ" secondAttribute="trailing" constant="6" id="8er-hX-cKG"/>
+                <constraint firstAttribute="bottom" secondItem="n5S-AY-6PQ" secondAttribute="bottom" constant="6" id="idN-Zd-YG0"/>
+                <constraint firstItem="n5S-AY-6PQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="6" id="kKq-Cc-1Yl"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="50" height="46"/>
+            <connections>
+                <outlet property="emojiImageView" destination="n5S-AY-6PQ" id="eEd-0M-lhs"/>
+            </connections>
+            <point key="canvasLocation" x="-192" y="91"/>
+        </collectionViewCell>
+    </objects>
+</document>

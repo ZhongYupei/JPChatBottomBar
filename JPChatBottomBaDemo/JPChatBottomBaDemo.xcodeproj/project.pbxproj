@@ -1,0 +1,938 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6BD6DD8722FD59FB00E9C833 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DD8622FD59FB00E9C833 /* AppDelegate.m */; };
+		6BD6DD8D22FD59FB00E9C833 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DD8B22FD59FB00E9C833 /* Main.storyboard */; };
+		6BD6DD8F22FD59FC00E9C833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DD8E22FD59FC00E9C833 /* Assets.xcassets */; };
+		6BD6DD9222FD59FC00E9C833 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DD9022FD59FC00E9C833 /* LaunchScreen.storyboard */; };
+		6BD6DD9522FD59FC00E9C833 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DD9422FD59FC00E9C833 /* main.m */; };
+		6BD6DD9F22FD59FC00E9C833 /* JPChatBottomBaDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DD9E22FD59FC00E9C833 /* JPChatBottomBaDemoTests.m */; };
+		6BD6DDAA22FD59FC00E9C833 /* JPChatBottomBaDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DDA922FD59FC00E9C833 /* JPChatBottomBaDemoUITests.m */; };
+		6BD6DDBA22FD5A3B00E9C833 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DDB922FD5A3B00E9C833 /* ViewController.m */; };
+		6BD6DDC322FD5AD600E9C833 /* UIImageView+GifTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DDBF22FD5AD600E9C833 /* UIImageView+GifTool.m */; };
+		6BD6DDC422FD5AD600E9C833 /* UIView+JPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DDC022FD5AD600E9C833 /* UIView+JPExtension.m */; };
+		6BD6DDCC22FD5AEF00E9C833 /* JPPlayerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DDC622FD5AEE00E9C833 /* JPPlayerHelper.m */; };
+		6BD6DDCD22FD5AEF00E9C833 /* JPAttributedStringHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DDC722FD5AEE00E9C833 /* JPAttributedStringHelper.m */; };
+		6BD6DDCE22FD5AEF00E9C833 /* JPEmojiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DDCB22FD5AEF00E9C833 /* JPEmojiManager.m */; };
+		6BD6DDF422FD5B2400E9C833 /* jianpan_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDD022FD5B2200E9C833 /* jianpan_normal@2x.png */; };
+		6BD6DDF522FD5B2400E9C833 /* yuyin_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDD122FD5B2200E9C833 /* yuyin_press@2x.png */; };
+		6BD6DDF622FD5B2400E9C833 /* biaoqing_press@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDD222FD5B2200E9C833 /* biaoqing_press@3x.png */; };
+		6BD6DDF722FD5B2400E9C833 /* gengduo_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDD322FD5B2200E9C833 /* gengduo_press@2x.png */; };
+		6BD6DDF822FD5B2400E9C833 /* gengduo_press@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDD422FD5B2200E9C833 /* gengduo_press@3x.png */; };
+		6BD6DDF922FD5B2400E9C833 /* ianpan_press@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDD522FD5B2200E9C833 /* ianpan_press@3x.png */; };
+		6BD6DDFA22FD5B2400E9C833 /* JPMoreBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDD622FD5B2200E9C833 /* JPMoreBundle.bundle */; };
+		6BD6DDFB22FD5B2400E9C833 /* biaoqing_press.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDD722FD5B2200E9C833 /* biaoqing_press.png */; };
+		6BD6DDFC22FD5B2400E9C833 /* gengduo_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDD822FD5B2200E9C833 /* gengduo_normal@3x.png */; };
+		6BD6DDFD22FD5B2400E9C833 /* yuyin_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDD922FD5B2200E9C833 /* yuyin_normal@2x.png */; };
+		6BD6DDFE22FD5B2400E9C833 /* yuyin_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDDA22FD5B2200E9C833 /* yuyin_normal@3x.png */; };
+		6BD6DDFF22FD5B2400E9C833 /* zhengzaiyuyin_3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDDB22FD5B2200E9C833 /* zhengzaiyuyin_3@3x.png */; };
+		6BD6DE0022FD5B2400E9C833 /* biaoqing_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDDC22FD5B2200E9C833 /* biaoqing_normal@2x.png */; };
+		6BD6DE0122FD5B2400E9C833 /* zhengzaiyuyin_5@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDDD22FD5B2200E9C833 /* zhengzaiyuyin_5@3x.png */; };
+		6BD6DE0222FD5B2400E9C833 /* emoji-preview-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDDE22FD5B2200E9C833 /* emoji-preview-bg.png */; };
+		6BD6DE0322FD5B2400E9C833 /* biaoqing_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDDF22FD5B2300E9C833 /* biaoqing_normal@3x.png */; };
+		6BD6DE0422FD5B2400E9C833 /* jianpan_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDE022FD5B2300E9C833 /* jianpan_normal.png */; };
+		6BD6DE0522FD5B2400E9C833 /* gengduo_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDE122FD5B2300E9C833 /* gengduo_normal@2x.png */; };
+		6BD6DE0622FD5B2400E9C833 /* zhengzaiyuyin_1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDE222FD5B2300E9C833 /* zhengzaiyuyin_1@3x.png */; };
+		6BD6DE0722FD5B2400E9C833 /* emoji-preview-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDE322FD5B2300E9C833 /* emoji-preview-bg@2x.png */; };
+		6BD6DE0822FD5B2400E9C833 /* gengduo_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDE422FD5B2300E9C833 /* gengduo_normal.png */; };
+		6BD6DE0922FD5B2400E9C833 /* biaoqing_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDE522FD5B2300E9C833 /* biaoqing_normal.png */; };
+		6BD6DE0A22FD5B2400E9C833 /* ianpan_press.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDE622FD5B2300E9C833 /* ianpan_press.png */; };
+		6BD6DE0B22FD5B2400E9C833 /* yuyin_press@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDE722FD5B2300E9C833 /* yuyin_press@3x.png */; };
+		6BD6DE0C22FD5B2400E9C833 /* ianpan_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDE822FD5B2300E9C833 /* ianpan_press@2x.png */; };
+		6BD6DE0D22FD5B2400E9C833 /* biaoqing_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDE922FD5B2300E9C833 /* biaoqing_press@2x.png */; };
+		6BD6DE0E22FD5B2400E9C833 /* gengduo_press.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDEA22FD5B2300E9C833 /* gengduo_press.png */; };
+		6BD6DE0F22FD5B2400E9C833 /* JPEmojiBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDEB22FD5B2300E9C833 /* JPEmojiBundle.bundle */; };
+		6BD6DE1022FD5B2400E9C833 /* zhengzaiyuyin_4@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDEC22FD5B2300E9C833 /* zhengzaiyuyin_4@3x.png */; };
+		6BD6DE1122FD5B2400E9C833 /* jianpan_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDED22FD5B2300E9C833 /* jianpan_normal@3x.png */; };
+		6BD6DE1222FD5B2400E9C833 /* zhengzaiyuyin_6@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDEE22FD5B2300E9C833 /* zhengzaiyuyin_6@3x.png */; };
+		6BD6DE1322FD5B2400E9C833 /* yuyin_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDEF22FD5B2300E9C833 /* yuyin_normal.png */; };
+		6BD6DE1422FD5B2400E9C833 /* yuyin_press.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDF022FD5B2400E9C833 /* yuyin_press.png */; };
+		6BD6DE1522FD5B2400E9C833 /* zhengzaiyuyin_2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDF122FD5B2400E9C833 /* zhengzaiyuyin_2@3x.png */; };
+		6BD6DE1622FD5B2400E9C833 /* emoji-preview-bg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDF222FD5B2400E9C833 /* emoji-preview-bg@3x.png */; };
+		6BD6DE1722FD5B2400E9C833 /* songkai@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DDF322FD5B2400E9C833 /* songkai@3x.png */; };
+		6BD6DE1A22FD5B2D00E9C833 /* JPChatBottomBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DE1922FD5B2C00E9C833 /* JPChatBottomBar.m */; };
+		6BD6DE2222FD5B4000E9C833 /* JPEmojiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DE1C22FD5B4000E9C833 /* JPEmojiModel.m */; };
+		6BD6DE2322FD5B4000E9C833 /* JPEmojiGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DE1D22FD5B4000E9C833 /* JPEmojiGroupModel.m */; };
+		6BD6DE2422FD5B4000E9C833 /* JPEmojiMatchingResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DE1F22FD5B4000E9C833 /* JPEmojiMatchingResult.m */; };
+		6BD6DE3322FD5B5A00E9C833 /* JPEmojiInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DE2722FD5B5A00E9C833 /* JPEmojiInputView.m */; };
+		6BD6DE3422FD5B5A00E9C833 /* JPEmojiBottomBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DE2822FD5B5A00E9C833 /* JPEmojiBottomBar.m */; };
+		6BD6DE3522FD5B5A00E9C833 /* JPEmojiCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DE2922FD5B5A00E9C833 /* JPEmojiCVCell.xib */; };
+		6BD6DE3622FD5B5A00E9C833 /* JPInputPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DE2B22FD5B5A00E9C833 /* JPInputPageView.m */; };
+		6BD6DE3722FD5B5A00E9C833 /* JPLargeEmojiCVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DE2C22FD5B5A00E9C833 /* JPLargeEmojiCVCell.m */; };
+		6BD6DE3822FD5B5A00E9C833 /* JPLargeEmojiCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DE2D22FD5B5A00E9C833 /* JPLargeEmojiCVCell.xib */; };
+		6BD6DE3922FD5B5A00E9C833 /* JPEmojiCVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DE3022FD5B5A00E9C833 /* JPEmojiCVCell.m */; };
+		6BD6DE4222FD5B6A00E9C833 /* JPMoreCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DE3E22FD5B6A00E9C833 /* JPMoreCVCell.xib */; };
+		6BD6DE4322FD5B6A00E9C833 /* JPMoreInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DE3F22FD5B6A00E9C833 /* JPMoreInputView.m */; };
+		6BD6DE4422FD5B6A00E9C833 /* JPMoreCVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DE4022FD5B6A00E9C833 /* JPMoreCVCell.m */; };
+		6BD6DE4B22FD5B8A00E9C833 /* JPEmojiPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DE4922FD5B8A00E9C833 /* JPEmojiPreview.m */; };
+		6BD6DE4C22FD5B8A00E9C833 /* JPGIfPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DE4A22FD5B8A00E9C833 /* JPGIfPreview.m */; };
+		6BD6DE4F22FD5B8F00E9C833 /* JPAudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DE4E22FD5B8F00E9C833 /* JPAudioView.m */; };
+		6BD6DE5122FD5BB400E9C833 /* ThirdLib in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DE5022FD5BB400E9C833 /* ThirdLib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6BD6DD9B22FD59FC00E9C833 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BD6DD7A22FD59FB00E9C833 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BD6DD8122FD59FB00E9C833;
+			remoteInfo = JPChatBottomBaDemo;
+		};
+		6BD6DDA622FD59FC00E9C833 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BD6DD7A22FD59FB00E9C833 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BD6DD8122FD59FB00E9C833;
+			remoteInfo = JPChatBottomBaDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6BD6DD8222FD59FB00E9C833 /* JPChatBottomBaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JPChatBottomBaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BD6DD8522FD59FB00E9C833 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6BD6DD8622FD59FB00E9C833 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6BD6DD8822FD59FB00E9C833 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6BD6DD8C22FD59FB00E9C833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6BD6DD8E22FD59FC00E9C833 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6BD6DD9122FD59FC00E9C833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6BD6DD9322FD59FC00E9C833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BD6DD9422FD59FC00E9C833 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6BD6DD9A22FD59FC00E9C833 /* JPChatBottomBaDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JPChatBottomBaDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BD6DD9E22FD59FC00E9C833 /* JPChatBottomBaDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPChatBottomBaDemoTests.m; sourceTree = "<group>"; };
+		6BD6DDA022FD59FC00E9C833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BD6DDA522FD59FC00E9C833 /* JPChatBottomBaDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JPChatBottomBaDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BD6DDA922FD59FC00E9C833 /* JPChatBottomBaDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPChatBottomBaDemoUITests.m; sourceTree = "<group>"; };
+		6BD6DDAB22FD59FC00E9C833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BD6DDB922FD5A3B00E9C833 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6BD6DDBF22FD5AD600E9C833 /* UIImageView+GifTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+GifTool.m"; sourceTree = "<group>"; };
+		6BD6DDC022FD5AD600E9C833 /* UIView+JPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JPExtension.m"; sourceTree = "<group>"; };
+		6BD6DDC122FD5AD600E9C833 /* UIImageView+GifTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+GifTool.h"; sourceTree = "<group>"; };
+		6BD6DDC222FD5AD600E9C833 /* UIView+JPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JPExtension.h"; sourceTree = "<group>"; };
+		6BD6DDC622FD5AEE00E9C833 /* JPPlayerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPPlayerHelper.m; sourceTree = "<group>"; };
+		6BD6DDC722FD5AEE00E9C833 /* JPAttributedStringHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPAttributedStringHelper.m; sourceTree = "<group>"; };
+		6BD6DDC822FD5AEE00E9C833 /* JPAttributedStringHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPAttributedStringHelper.h; sourceTree = "<group>"; };
+		6BD6DDC922FD5AEE00E9C833 /* JPPlayerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPPlayerHelper.h; sourceTree = "<group>"; };
+		6BD6DDCA22FD5AEF00E9C833 /* JPEmojiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEmojiManager.h; sourceTree = "<group>"; };
+		6BD6DDCB22FD5AEF00E9C833 /* JPEmojiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPEmojiManager.m; sourceTree = "<group>"; };
+		6BD6DDD022FD5B2200E9C833 /* jianpan_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jianpan_normal@2x.png"; sourceTree = "<group>"; };
+		6BD6DDD122FD5B2200E9C833 /* yuyin_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yuyin_press@2x.png"; sourceTree = "<group>"; };
+		6BD6DDD222FD5B2200E9C833 /* biaoqing_press@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biaoqing_press@3x.png"; sourceTree = "<group>"; };
+		6BD6DDD322FD5B2200E9C833 /* gengduo_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gengduo_press@2x.png"; sourceTree = "<group>"; };
+		6BD6DDD422FD5B2200E9C833 /* gengduo_press@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gengduo_press@3x.png"; sourceTree = "<group>"; };
+		6BD6DDD522FD5B2200E9C833 /* ianpan_press@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ianpan_press@3x.png"; sourceTree = "<group>"; };
+		6BD6DDD622FD5B2200E9C833 /* JPMoreBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JPMoreBundle.bundle; sourceTree = "<group>"; };
+		6BD6DDD722FD5B2200E9C833 /* biaoqing_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = biaoqing_press.png; sourceTree = "<group>"; };
+		6BD6DDD822FD5B2200E9C833 /* gengduo_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gengduo_normal@3x.png"; sourceTree = "<group>"; };
+		6BD6DDD922FD5B2200E9C833 /* yuyin_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yuyin_normal@2x.png"; sourceTree = "<group>"; };
+		6BD6DDDA22FD5B2200E9C833 /* yuyin_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yuyin_normal@3x.png"; sourceTree = "<group>"; };
+		6BD6DDDB22FD5B2200E9C833 /* zhengzaiyuyin_3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zhengzaiyuyin_3@3x.png"; sourceTree = "<group>"; };
+		6BD6DDDC22FD5B2200E9C833 /* biaoqing_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biaoqing_normal@2x.png"; sourceTree = "<group>"; };
+		6BD6DDDD22FD5B2200E9C833 /* zhengzaiyuyin_5@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zhengzaiyuyin_5@3x.png"; sourceTree = "<group>"; };
+		6BD6DDDE22FD5B2200E9C833 /* emoji-preview-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoji-preview-bg.png"; sourceTree = "<group>"; };
+		6BD6DDDF22FD5B2300E9C833 /* biaoqing_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biaoqing_normal@3x.png"; sourceTree = "<group>"; };
+		6BD6DDE022FD5B2300E9C833 /* jianpan_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jianpan_normal.png; sourceTree = "<group>"; };
+		6BD6DDE122FD5B2300E9C833 /* gengduo_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gengduo_normal@2x.png"; sourceTree = "<group>"; };
+		6BD6DDE222FD5B2300E9C833 /* zhengzaiyuyin_1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zhengzaiyuyin_1@3x.png"; sourceTree = "<group>"; };
+		6BD6DDE322FD5B2300E9C833 /* emoji-preview-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoji-preview-bg@2x.png"; sourceTree = "<group>"; };
+		6BD6DDE422FD5B2300E9C833 /* gengduo_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gengduo_normal.png; sourceTree = "<group>"; };
+		6BD6DDE522FD5B2300E9C833 /* biaoqing_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = biaoqing_normal.png; sourceTree = "<group>"; };
+		6BD6DDE622FD5B2300E9C833 /* ianpan_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ianpan_press.png; sourceTree = "<group>"; };
+		6BD6DDE722FD5B2300E9C833 /* yuyin_press@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yuyin_press@3x.png"; sourceTree = "<group>"; };
+		6BD6DDE822FD5B2300E9C833 /* ianpan_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ianpan_press@2x.png"; sourceTree = "<group>"; };
+		6BD6DDE922FD5B2300E9C833 /* biaoqing_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biaoqing_press@2x.png"; sourceTree = "<group>"; };
+		6BD6DDEA22FD5B2300E9C833 /* gengduo_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gengduo_press.png; sourceTree = "<group>"; };
+		6BD6DDEB22FD5B2300E9C833 /* JPEmojiBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JPEmojiBundle.bundle; sourceTree = "<group>"; };
+		6BD6DDEC22FD5B2300E9C833 /* zhengzaiyuyin_4@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zhengzaiyuyin_4@3x.png"; sourceTree = "<group>"; };
+		6BD6DDED22FD5B2300E9C833 /* jianpan_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jianpan_normal@3x.png"; sourceTree = "<group>"; };
+		6BD6DDEE22FD5B2300E9C833 /* zhengzaiyuyin_6@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zhengzaiyuyin_6@3x.png"; sourceTree = "<group>"; };
+		6BD6DDEF22FD5B2300E9C833 /* yuyin_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yuyin_normal.png; sourceTree = "<group>"; };
+		6BD6DDF022FD5B2400E9C833 /* yuyin_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yuyin_press.png; sourceTree = "<group>"; };
+		6BD6DDF122FD5B2400E9C833 /* zhengzaiyuyin_2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zhengzaiyuyin_2@3x.png"; sourceTree = "<group>"; };
+		6BD6DDF222FD5B2400E9C833 /* emoji-preview-bg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoji-preview-bg@3x.png"; sourceTree = "<group>"; };
+		6BD6DDF322FD5B2400E9C833 /* songkai@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "songkai@3x.png"; sourceTree = "<group>"; };
+		6BD6DE1822FD5B2C00E9C833 /* JPChatBottomBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPChatBottomBar.h; sourceTree = "<group>"; };
+		6BD6DE1922FD5B2C00E9C833 /* JPChatBottomBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPChatBottomBar.m; sourceTree = "<group>"; };
+		6BD6DE1C22FD5B4000E9C833 /* JPEmojiModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPEmojiModel.m; sourceTree = "<group>"; };
+		6BD6DE1D22FD5B4000E9C833 /* JPEmojiGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPEmojiGroupModel.m; sourceTree = "<group>"; };
+		6BD6DE1E22FD5B4000E9C833 /* JPEmojiGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEmojiGroupModel.h; sourceTree = "<group>"; };
+		6BD6DE1F22FD5B4000E9C833 /* JPEmojiMatchingResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPEmojiMatchingResult.m; sourceTree = "<group>"; };
+		6BD6DE2022FD5B4000E9C833 /* JPEmojiMatchingResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEmojiMatchingResult.h; sourceTree = "<group>"; };
+		6BD6DE2122FD5B4000E9C833 /* JPEmojiModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEmojiModel.h; sourceTree = "<group>"; };
+		6BD6DE2722FD5B5A00E9C833 /* JPEmojiInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPEmojiInputView.m; sourceTree = "<group>"; };
+		6BD6DE2822FD5B5A00E9C833 /* JPEmojiBottomBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPEmojiBottomBar.m; sourceTree = "<group>"; };
+		6BD6DE2922FD5B5A00E9C833 /* JPEmojiCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPEmojiCVCell.xib; sourceTree = "<group>"; };
+		6BD6DE2A22FD5B5A00E9C833 /* JPEmojiBottomBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEmojiBottomBar.h; sourceTree = "<group>"; };
+		6BD6DE2B22FD5B5A00E9C833 /* JPInputPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPInputPageView.m; sourceTree = "<group>"; };
+		6BD6DE2C22FD5B5A00E9C833 /* JPLargeEmojiCVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPLargeEmojiCVCell.m; sourceTree = "<group>"; };
+		6BD6DE2D22FD5B5A00E9C833 /* JPLargeEmojiCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPLargeEmojiCVCell.xib; sourceTree = "<group>"; };
+		6BD6DE2E22FD5B5A00E9C833 /* JPInputPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPInputPageView.h; sourceTree = "<group>"; };
+		6BD6DE2F22FD5B5A00E9C833 /* JPEmojiInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEmojiInputView.h; sourceTree = "<group>"; };
+		6BD6DE3022FD5B5A00E9C833 /* JPEmojiCVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPEmojiCVCell.m; sourceTree = "<group>"; };
+		6BD6DE3122FD5B5A00E9C833 /* JPEmojiCVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEmojiCVCell.h; sourceTree = "<group>"; };
+		6BD6DE3222FD5B5A00E9C833 /* JPLargeEmojiCVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPLargeEmojiCVCell.h; sourceTree = "<group>"; };
+		6BD6DE3B22FD5B6900E9C833 /* JPMoreCVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPMoreCVCell.h; sourceTree = "<group>"; };
+		6BD6DE3D22FD5B6A00E9C833 /* JPMoreInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPMoreInputView.h; sourceTree = "<group>"; };
+		6BD6DE3E22FD5B6A00E9C833 /* JPMoreCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPMoreCVCell.xib; sourceTree = "<group>"; };
+		6BD6DE3F22FD5B6A00E9C833 /* JPMoreInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPMoreInputView.m; sourceTree = "<group>"; };
+		6BD6DE4022FD5B6A00E9C833 /* JPMoreCVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPMoreCVCell.m; sourceTree = "<group>"; };
+		6BD6DE4722FD5B8A00E9C833 /* JPEmojiPreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEmojiPreview.h; sourceTree = "<group>"; };
+		6BD6DE4822FD5B8A00E9C833 /* JPGIfPreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPGIfPreview.h; sourceTree = "<group>"; };
+		6BD6DE4922FD5B8A00E9C833 /* JPEmojiPreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPEmojiPreview.m; sourceTree = "<group>"; };
+		6BD6DE4A22FD5B8A00E9C833 /* JPGIfPreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPGIfPreview.m; sourceTree = "<group>"; };
+		6BD6DE4D22FD5B8E00E9C833 /* JPAudioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPAudioView.h; sourceTree = "<group>"; };
+		6BD6DE4E22FD5B8F00E9C833 /* JPAudioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPAudioView.m; sourceTree = "<group>"; };
+		6BD6DE5022FD5BB400E9C833 /* ThirdLib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ThirdLib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6BD6DD7F22FD59FB00E9C833 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BD6DD9722FD59FC00E9C833 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BD6DDA222FD59FC00E9C833 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6BD6DD7922FD59FB00E9C833 = {
+			isa = PBXGroup;
+			children = (
+				6BD6DD8422FD59FB00E9C833 /* JPChatBottomBaDemo */,
+				6BD6DD9D22FD59FC00E9C833 /* JPChatBottomBaDemoTests */,
+				6BD6DDA822FD59FC00E9C833 /* JPChatBottomBaDemoUITests */,
+				6BD6DD8322FD59FB00E9C833 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6BD6DD8322FD59FB00E9C833 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BD6DD8222FD59FB00E9C833 /* JPChatBottomBaDemo.app */,
+				6BD6DD9A22FD59FC00E9C833 /* JPChatBottomBaDemoTests.xctest */,
+				6BD6DDA522FD59FC00E9C833 /* JPChatBottomBaDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BD6DD8422FD59FB00E9C833 /* JPChatBottomBaDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6BD6DE5022FD5BB400E9C833 /* ThirdLib */,
+				6BD6DDBD22FD5AA500E9C833 /* JPChatBottomBar */,
+				6BD6DE1822FD5B2C00E9C833 /* JPChatBottomBar.h */,
+				6BD6DE1922FD5B2C00E9C833 /* JPChatBottomBar.m */,
+				6BD6DD8522FD59FB00E9C833 /* AppDelegate.h */,
+				6BD6DD8622FD59FB00E9C833 /* AppDelegate.m */,
+				6BD6DD8822FD59FB00E9C833 /* ViewController.h */,
+				6BD6DDB922FD5A3B00E9C833 /* ViewController.m */,
+				6BD6DD8B22FD59FB00E9C833 /* Main.storyboard */,
+				6BD6DD8E22FD59FC00E9C833 /* Assets.xcassets */,
+				6BD6DD9022FD59FC00E9C833 /* LaunchScreen.storyboard */,
+				6BD6DD9322FD59FC00E9C833 /* Info.plist */,
+				6BD6DD9422FD59FC00E9C833 /* main.m */,
+			);
+			path = JPChatBottomBaDemo;
+			sourceTree = "<group>";
+		};
+		6BD6DD9D22FD59FC00E9C833 /* JPChatBottomBaDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6BD6DD9E22FD59FC00E9C833 /* JPChatBottomBaDemoTests.m */,
+				6BD6DDA022FD59FC00E9C833 /* Info.plist */,
+			);
+			path = JPChatBottomBaDemoTests;
+			sourceTree = "<group>";
+		};
+		6BD6DDA822FD59FC00E9C833 /* JPChatBottomBaDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6BD6DDA922FD59FC00E9C833 /* JPChatBottomBaDemoUITests.m */,
+				6BD6DDAB22FD59FC00E9C833 /* Info.plist */,
+			);
+			path = JPChatBottomBaDemoUITests;
+			sourceTree = "<group>";
+		};
+		6BD6DDBD22FD5AA500E9C833 /* JPChatBottomBar */ = {
+			isa = PBXGroup;
+			children = (
+				6BD6DE2522FD5B4900E9C833 /* view */,
+				6BD6DE1B22FD5B3700E9C833 /* model */,
+				6BD6DDCF22FD5AF700E9C833 /* ImageResource */,
+				6BD6DDC522FD5AE100E9C833 /* helper */,
+				6BD6DDBE22FD5AC900E9C833 /* category */,
+			);
+			path = JPChatBottomBar;
+			sourceTree = "<group>";
+		};
+		6BD6DDBE22FD5AC900E9C833 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				6BD6DDC122FD5AD600E9C833 /* UIImageView+GifTool.h */,
+				6BD6DDBF22FD5AD600E9C833 /* UIImageView+GifTool.m */,
+				6BD6DDC222FD5AD600E9C833 /* UIView+JPExtension.h */,
+				6BD6DDC022FD5AD600E9C833 /* UIView+JPExtension.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		6BD6DDC522FD5AE100E9C833 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				6BD6DDC822FD5AEE00E9C833 /* JPAttributedStringHelper.h */,
+				6BD6DDC722FD5AEE00E9C833 /* JPAttributedStringHelper.m */,
+				6BD6DDCA22FD5AEF00E9C833 /* JPEmojiManager.h */,
+				6BD6DDCB22FD5AEF00E9C833 /* JPEmojiManager.m */,
+				6BD6DDC922FD5AEE00E9C833 /* JPPlayerHelper.h */,
+				6BD6DDC622FD5AEE00E9C833 /* JPPlayerHelper.m */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		6BD6DDCF22FD5AF700E9C833 /* ImageResource */ = {
+			isa = PBXGroup;
+			children = (
+				6BD6DDE522FD5B2300E9C833 /* biaoqing_normal.png */,
+				6BD6DDDC22FD5B2200E9C833 /* biaoqing_normal@2x.png */,
+				6BD6DDDF22FD5B2300E9C833 /* biaoqing_normal@3x.png */,
+				6BD6DDD722FD5B2200E9C833 /* biaoqing_press.png */,
+				6BD6DDE922FD5B2300E9C833 /* biaoqing_press@2x.png */,
+				6BD6DDD222FD5B2200E9C833 /* biaoqing_press@3x.png */,
+				6BD6DDDE22FD5B2200E9C833 /* emoji-preview-bg.png */,
+				6BD6DDE322FD5B2300E9C833 /* emoji-preview-bg@2x.png */,
+				6BD6DDF222FD5B2400E9C833 /* emoji-preview-bg@3x.png */,
+				6BD6DDE422FD5B2300E9C833 /* gengduo_normal.png */,
+				6BD6DDE122FD5B2300E9C833 /* gengduo_normal@2x.png */,
+				6BD6DDD822FD5B2200E9C833 /* gengduo_normal@3x.png */,
+				6BD6DDEA22FD5B2300E9C833 /* gengduo_press.png */,
+				6BD6DDD322FD5B2200E9C833 /* gengduo_press@2x.png */,
+				6BD6DDD422FD5B2200E9C833 /* gengduo_press@3x.png */,
+				6BD6DDE622FD5B2300E9C833 /* ianpan_press.png */,
+				6BD6DDE822FD5B2300E9C833 /* ianpan_press@2x.png */,
+				6BD6DDD522FD5B2200E9C833 /* ianpan_press@3x.png */,
+				6BD6DDE022FD5B2300E9C833 /* jianpan_normal.png */,
+				6BD6DDD022FD5B2200E9C833 /* jianpan_normal@2x.png */,
+				6BD6DDED22FD5B2300E9C833 /* jianpan_normal@3x.png */,
+				6BD6DDEB22FD5B2300E9C833 /* JPEmojiBundle.bundle */,
+				6BD6DDD622FD5B2200E9C833 /* JPMoreBundle.bundle */,
+				6BD6DDF322FD5B2400E9C833 /* songkai@3x.png */,
+				6BD6DDEF22FD5B2300E9C833 /* yuyin_normal.png */,
+				6BD6DDD922FD5B2200E9C833 /* yuyin_normal@2x.png */,
+				6BD6DDDA22FD5B2200E9C833 /* yuyin_normal@3x.png */,
+				6BD6DDF022FD5B2400E9C833 /* yuyin_press.png */,
+				6BD6DDD122FD5B2200E9C833 /* yuyin_press@2x.png */,
+				6BD6DDE722FD5B2300E9C833 /* yuyin_press@3x.png */,
+				6BD6DDE222FD5B2300E9C833 /* zhengzaiyuyin_1@3x.png */,
+				6BD6DDF122FD5B2400E9C833 /* zhengzaiyuyin_2@3x.png */,
+				6BD6DDDB22FD5B2200E9C833 /* zhengzaiyuyin_3@3x.png */,
+				6BD6DDEC22FD5B2300E9C833 /* zhengzaiyuyin_4@3x.png */,
+				6BD6DDDD22FD5B2200E9C833 /* zhengzaiyuyin_5@3x.png */,
+				6BD6DDEE22FD5B2300E9C833 /* zhengzaiyuyin_6@3x.png */,
+			);
+			path = ImageResource;
+			sourceTree = "<group>";
+		};
+		6BD6DE1B22FD5B3700E9C833 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				6BD6DE1E22FD5B4000E9C833 /* JPEmojiGroupModel.h */,
+				6BD6DE1D22FD5B4000E9C833 /* JPEmojiGroupModel.m */,
+				6BD6DE2022FD5B4000E9C833 /* JPEmojiMatchingResult.h */,
+				6BD6DE1F22FD5B4000E9C833 /* JPEmojiMatchingResult.m */,
+				6BD6DE2122FD5B4000E9C833 /* JPEmojiModel.h */,
+				6BD6DE1C22FD5B4000E9C833 /* JPEmojiModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		6BD6DE2522FD5B4900E9C833 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				6BD6DE4622FD5B8200E9C833 /* preview */,
+				6BD6DE4522FD5B7A00E9C833 /* other */,
+				6BD6DE3A22FD5B6100E9C833 /* more */,
+				6BD6DE2622FD5B4D00E9C833 /* emoji */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		6BD6DE2622FD5B4D00E9C833 /* emoji */ = {
+			isa = PBXGroup;
+			children = (
+				6BD6DE2A22FD5B5A00E9C833 /* JPEmojiBottomBar.h */,
+				6BD6DE2822FD5B5A00E9C833 /* JPEmojiBottomBar.m */,
+				6BD6DE3122FD5B5A00E9C833 /* JPEmojiCVCell.h */,
+				6BD6DE3022FD5B5A00E9C833 /* JPEmojiCVCell.m */,
+				6BD6DE2922FD5B5A00E9C833 /* JPEmojiCVCell.xib */,
+				6BD6DE2F22FD5B5A00E9C833 /* JPEmojiInputView.h */,
+				6BD6DE2722FD5B5A00E9C833 /* JPEmojiInputView.m */,
+				6BD6DE2E22FD5B5A00E9C833 /* JPInputPageView.h */,
+				6BD6DE2B22FD5B5A00E9C833 /* JPInputPageView.m */,
+				6BD6DE3222FD5B5A00E9C833 /* JPLargeEmojiCVCell.h */,
+				6BD6DE2C22FD5B5A00E9C833 /* JPLargeEmojiCVCell.m */,
+				6BD6DE2D22FD5B5A00E9C833 /* JPLargeEmojiCVCell.xib */,
+			);
+			path = emoji;
+			sourceTree = "<group>";
+		};
+		6BD6DE3A22FD5B6100E9C833 /* more */ = {
+			isa = PBXGroup;
+			children = (
+				6BD6DE3B22FD5B6900E9C833 /* JPMoreCVCell.h */,
+				6BD6DE4022FD5B6A00E9C833 /* JPMoreCVCell.m */,
+				6BD6DE3E22FD5B6A00E9C833 /* JPMoreCVCell.xib */,
+				6BD6DE3D22FD5B6A00E9C833 /* JPMoreInputView.h */,
+				6BD6DE3F22FD5B6A00E9C833 /* JPMoreInputView.m */,
+			);
+			path = more;
+			sourceTree = "<group>";
+		};
+		6BD6DE4522FD5B7A00E9C833 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				6BD6DE4D22FD5B8E00E9C833 /* JPAudioView.h */,
+				6BD6DE4E22FD5B8F00E9C833 /* JPAudioView.m */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		6BD6DE4622FD5B8200E9C833 /* preview */ = {
+			isa = PBXGroup;
+			children = (
+				6BD6DE4722FD5B8A00E9C833 /* JPEmojiPreview.h */,
+				6BD6DE4922FD5B8A00E9C833 /* JPEmojiPreview.m */,
+				6BD6DE4822FD5B8A00E9C833 /* JPGIfPreview.h */,
+				6BD6DE4A22FD5B8A00E9C833 /* JPGIfPreview.m */,
+			);
+			path = preview;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6BD6DD8122FD59FB00E9C833 /* JPChatBottomBaDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BD6DDAE22FD59FC00E9C833 /* Build configuration list for PBXNativeTarget "JPChatBottomBaDemo" */;
+			buildPhases = (
+				6BD6DD7E22FD59FB00E9C833 /* Sources */,
+				6BD6DD7F22FD59FB00E9C833 /* Frameworks */,
+				6BD6DD8022FD59FB00E9C833 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JPChatBottomBaDemo;
+			productName = JPChatBottomBaDemo;
+			productReference = 6BD6DD8222FD59FB00E9C833 /* JPChatBottomBaDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6BD6DD9922FD59FC00E9C833 /* JPChatBottomBaDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BD6DDB122FD59FC00E9C833 /* Build configuration list for PBXNativeTarget "JPChatBottomBaDemoTests" */;
+			buildPhases = (
+				6BD6DD9622FD59FC00E9C833 /* Sources */,
+				6BD6DD9722FD59FC00E9C833 /* Frameworks */,
+				6BD6DD9822FD59FC00E9C833 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BD6DD9C22FD59FC00E9C833 /* PBXTargetDependency */,
+			);
+			name = JPChatBottomBaDemoTests;
+			productName = JPChatBottomBaDemoTests;
+			productReference = 6BD6DD9A22FD59FC00E9C833 /* JPChatBottomBaDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6BD6DDA422FD59FC00E9C833 /* JPChatBottomBaDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BD6DDB422FD59FC00E9C833 /* Build configuration list for PBXNativeTarget "JPChatBottomBaDemoUITests" */;
+			buildPhases = (
+				6BD6DDA122FD59FC00E9C833 /* Sources */,
+				6BD6DDA222FD59FC00E9C833 /* Frameworks */,
+				6BD6DDA322FD59FC00E9C833 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BD6DDA722FD59FC00E9C833 /* PBXTargetDependency */,
+			);
+			name = JPChatBottomBaDemoUITests;
+			productName = JPChatBottomBaDemoUITests;
+			productReference = 6BD6DDA522FD59FC00E9C833 /* JPChatBottomBaDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6BD6DD7A22FD59FB00E9C833 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = JonPai;
+				TargetAttributes = {
+					6BD6DD8122FD59FB00E9C833 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					6BD6DD9922FD59FC00E9C833 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 6BD6DD8122FD59FB00E9C833;
+					};
+					6BD6DDA422FD59FC00E9C833 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 6BD6DD8122FD59FB00E9C833;
+					};
+				};
+			};
+			buildConfigurationList = 6BD6DD7D22FD59FB00E9C833 /* Build configuration list for PBXProject "JPChatBottomBaDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6BD6DD7922FD59FB00E9C833;
+			productRefGroup = 6BD6DD8322FD59FB00E9C833 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BD6DD8122FD59FB00E9C833 /* JPChatBottomBaDemo */,
+				6BD6DD9922FD59FC00E9C833 /* JPChatBottomBaDemoTests */,
+				6BD6DDA422FD59FC00E9C833 /* JPChatBottomBaDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6BD6DD8022FD59FB00E9C833 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BD6DD9222FD59FC00E9C833 /* LaunchScreen.storyboard in Resources */,
+				6BD6DE5122FD5BB400E9C833 /* ThirdLib in Resources */,
+				6BD6DE0522FD5B2400E9C833 /* gengduo_normal@2x.png in Resources */,
+				6BD6DDFC22FD5B2400E9C833 /* gengduo_normal@3x.png in Resources */,
+				6BD6DD8F22FD59FC00E9C833 /* Assets.xcassets in Resources */,
+				6BD6DE0F22FD5B2400E9C833 /* JPEmojiBundle.bundle in Resources */,
+				6BD6DE0E22FD5B2400E9C833 /* gengduo_press.png in Resources */,
+				6BD6DE0022FD5B2400E9C833 /* biaoqing_normal@2x.png in Resources */,
+				6BD6DE4222FD5B6A00E9C833 /* JPMoreCVCell.xib in Resources */,
+				6BD6DE0222FD5B2400E9C833 /* emoji-preview-bg.png in Resources */,
+				6BD6DE1722FD5B2400E9C833 /* songkai@3x.png in Resources */,
+				6BD6DDF422FD5B2400E9C833 /* jianpan_normal@2x.png in Resources */,
+				6BD6DDFF22FD5B2400E9C833 /* zhengzaiyuyin_3@3x.png in Resources */,
+				6BD6DDFB22FD5B2400E9C833 /* biaoqing_press.png in Resources */,
+				6BD6DDFA22FD5B2400E9C833 /* JPMoreBundle.bundle in Resources */,
+				6BD6DE1122FD5B2400E9C833 /* jianpan_normal@3x.png in Resources */,
+				6BD6DDFD22FD5B2400E9C833 /* yuyin_normal@2x.png in Resources */,
+				6BD6DDF622FD5B2400E9C833 /* biaoqing_press@3x.png in Resources */,
+				6BD6DE0122FD5B2400E9C833 /* zhengzaiyuyin_5@3x.png in Resources */,
+				6BD6DE0722FD5B2400E9C833 /* emoji-preview-bg@2x.png in Resources */,
+				6BD6DE0D22FD5B2400E9C833 /* biaoqing_press@2x.png in Resources */,
+				6BD6DE0B22FD5B2400E9C833 /* yuyin_press@3x.png in Resources */,
+				6BD6DE0922FD5B2400E9C833 /* biaoqing_normal.png in Resources */,
+				6BD6DE0C22FD5B2400E9C833 /* ianpan_press@2x.png in Resources */,
+				6BD6DE1522FD5B2400E9C833 /* zhengzaiyuyin_2@3x.png in Resources */,
+				6BD6DE1322FD5B2400E9C833 /* yuyin_normal.png in Resources */,
+				6BD6DE1222FD5B2400E9C833 /* zhengzaiyuyin_6@3x.png in Resources */,
+				6BD6DDFE22FD5B2400E9C833 /* yuyin_normal@3x.png in Resources */,
+				6BD6DE1622FD5B2400E9C833 /* emoji-preview-bg@3x.png in Resources */,
+				6BD6DE0A22FD5B2400E9C833 /* ianpan_press.png in Resources */,
+				6BD6DE1022FD5B2400E9C833 /* zhengzaiyuyin_4@3x.png in Resources */,
+				6BD6DE3522FD5B5A00E9C833 /* JPEmojiCVCell.xib in Resources */,
+				6BD6DD8D22FD59FB00E9C833 /* Main.storyboard in Resources */,
+				6BD6DDF922FD5B2400E9C833 /* ianpan_press@3x.png in Resources */,
+				6BD6DE1422FD5B2400E9C833 /* yuyin_press.png in Resources */,
+				6BD6DE0422FD5B2400E9C833 /* jianpan_normal.png in Resources */,
+				6BD6DDF722FD5B2400E9C833 /* gengduo_press@2x.png in Resources */,
+				6BD6DDF522FD5B2400E9C833 /* yuyin_press@2x.png in Resources */,
+				6BD6DE3822FD5B5A00E9C833 /* JPLargeEmojiCVCell.xib in Resources */,
+				6BD6DE0822FD5B2400E9C833 /* gengduo_normal.png in Resources */,
+				6BD6DE0322FD5B2400E9C833 /* biaoqing_normal@3x.png in Resources */,
+				6BD6DE0622FD5B2400E9C833 /* zhengzaiyuyin_1@3x.png in Resources */,
+				6BD6DDF822FD5B2400E9C833 /* gengduo_press@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BD6DD9822FD59FC00E9C833 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BD6DDA322FD59FC00E9C833 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BD6DD7E22FD59FB00E9C833 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BD6DDCC22FD5AEF00E9C833 /* JPPlayerHelper.m in Sources */,
+				6BD6DE3722FD5B5A00E9C833 /* JPLargeEmojiCVCell.m in Sources */,
+				6BD6DDBA22FD5A3B00E9C833 /* ViewController.m in Sources */,
+				6BD6DD9522FD59FC00E9C833 /* main.m in Sources */,
+				6BD6DE3322FD5B5A00E9C833 /* JPEmojiInputView.m in Sources */,
+				6BD6DE4422FD5B6A00E9C833 /* JPMoreCVCell.m in Sources */,
+				6BD6DD8722FD59FB00E9C833 /* AppDelegate.m in Sources */,
+				6BD6DDCE22FD5AEF00E9C833 /* JPEmojiManager.m in Sources */,
+				6BD6DDC422FD5AD600E9C833 /* UIView+JPExtension.m in Sources */,
+				6BD6DE2422FD5B4000E9C833 /* JPEmojiMatchingResult.m in Sources */,
+				6BD6DE2222FD5B4000E9C833 /* JPEmojiModel.m in Sources */,
+				6BD6DE2322FD5B4000E9C833 /* JPEmojiGroupModel.m in Sources */,
+				6BD6DE1A22FD5B2D00E9C833 /* JPChatBottomBar.m in Sources */,
+				6BD6DE3622FD5B5A00E9C833 /* JPInputPageView.m in Sources */,
+				6BD6DDC322FD5AD600E9C833 /* UIImageView+GifTool.m in Sources */,
+				6BD6DE4C22FD5B8A00E9C833 /* JPGIfPreview.m in Sources */,
+				6BD6DE4B22FD5B8A00E9C833 /* JPEmojiPreview.m in Sources */,
+				6BD6DDCD22FD5AEF00E9C833 /* JPAttributedStringHelper.m in Sources */,
+				6BD6DE3922FD5B5A00E9C833 /* JPEmojiCVCell.m in Sources */,
+				6BD6DE4F22FD5B8F00E9C833 /* JPAudioView.m in Sources */,
+				6BD6DE4322FD5B6A00E9C833 /* JPMoreInputView.m in Sources */,
+				6BD6DE3422FD5B5A00E9C833 /* JPEmojiBottomBar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BD6DD9622FD59FC00E9C833 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BD6DD9F22FD59FC00E9C833 /* JPChatBottomBaDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BD6DDA122FD59FC00E9C833 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BD6DDAA22FD59FC00E9C833 /* JPChatBottomBaDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6BD6DD9C22FD59FC00E9C833 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BD6DD8122FD59FB00E9C833 /* JPChatBottomBaDemo */;
+			targetProxy = 6BD6DD9B22FD59FC00E9C833 /* PBXContainerItemProxy */;
+		};
+		6BD6DDA722FD59FC00E9C833 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BD6DD8122FD59FB00E9C833 /* JPChatBottomBaDemo */;
+			targetProxy = 6BD6DDA622FD59FC00E9C833 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6BD6DD8B22FD59FB00E9C833 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BD6DD8C22FD59FB00E9C833 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6BD6DD9022FD59FC00E9C833 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BD6DD9122FD59FC00E9C833 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6BD6DDAC22FD59FC00E9C833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6BD6DDAD22FD59FC00E9C833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6BD6DDAF22FD59FC00E9C833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WCK3Q36U6V;
+				INFOPLIST_FILE = JPChatBottomBaDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonpai.www.JPChatBottomBaDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6BD6DDB022FD59FC00E9C833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WCK3Q36U6V;
+				INFOPLIST_FILE = JPChatBottomBaDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonpai.www.JPChatBottomBaDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6BD6DDB222FD59FC00E9C833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WCK3Q36U6V;
+				INFOPLIST_FILE = JPChatBottomBaDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonpai.www.JPChatBottomBaDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JPChatBottomBaDemo.app/JPChatBottomBaDemo";
+			};
+			name = Debug;
+		};
+		6BD6DDB322FD59FC00E9C833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WCK3Q36U6V;
+				INFOPLIST_FILE = JPChatBottomBaDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonpai.www.JPChatBottomBaDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JPChatBottomBaDemo.app/JPChatBottomBaDemo";
+			};
+			name = Release;
+		};
+		6BD6DDB522FD59FC00E9C833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WCK3Q36U6V;
+				INFOPLIST_FILE = JPChatBottomBaDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonpai.www.JPChatBottomBaDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JPChatBottomBaDemo;
+			};
+			name = Debug;
+		};
+		6BD6DDB622FD59FC00E9C833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WCK3Q36U6V;
+				INFOPLIST_FILE = JPChatBottomBaDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonpai.www.JPChatBottomBaDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JPChatBottomBaDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6BD6DD7D22FD59FB00E9C833 /* Build configuration list for PBXProject "JPChatBottomBaDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BD6DDAC22FD59FC00E9C833 /* Debug */,
+				6BD6DDAD22FD59FC00E9C833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BD6DDAE22FD59FC00E9C833 /* Build configuration list for PBXNativeTarget "JPChatBottomBaDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BD6DDAF22FD59FC00E9C833 /* Debug */,
+				6BD6DDB022FD59FC00E9C833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BD6DDB122FD59FC00E9C833 /* Build configuration list for PBXNativeTarget "JPChatBottomBaDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BD6DDB222FD59FC00E9C833 /* Debug */,
+				6BD6DDB322FD59FC00E9C833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BD6DDB422FD59FC00E9C833 /* Build configuration list for PBXNativeTarget "JPChatBottomBaDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BD6DDB522FD59FC00E9C833 /* Debug */,
+				6BD6DDB622FD59FC00E9C833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6BD6DD7A22FD59FB00E9C833 /* Project object */;
+}

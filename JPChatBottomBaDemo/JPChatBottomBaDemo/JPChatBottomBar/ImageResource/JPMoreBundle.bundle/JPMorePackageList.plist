@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>imageStr</key>
+		<string>camera</string>
+		<key>name</key>
+		<string>拍摄</string>
+	</dict>
+	<dict>
+		<key>imageStr</key>
+		<string>photo</string>
+		<key>name</key>
+		<string>照片</string>
+	</dict>
+	<dict>
+		<key>imageStr</key>
+		<string>location</string>
+		<key>name</key>
+		<string>位置</string>
+	</dict>
+	<dict>
+		<key>imageStr</key>
+		<string>file</string>
+		<key>name</key>
+		<string>文件</string>
+	</dict>
+</array>
+</plist>
