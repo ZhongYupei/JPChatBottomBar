@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:JPChatBottomBaDemo.xcodeproj">
+      location = "self:/Users/jonpai/JPChatBottomBar/JPChatBottomBaDemo/JPChatBottomBarDemo.xcodeproj">
    </FileRef>
 </Workspace>

@@ -12,8 +12,8 @@
 		6BD6DD8F22FD59FC00E9C833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DD8E22FD59FC00E9C833 /* Assets.xcassets */; };
 		6BD6DD9222FD59FC00E9C833 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6DD9022FD59FC00E9C833 /* LaunchScreen.storyboard */; };
 		6BD6DD9522FD59FC00E9C833 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DD9422FD59FC00E9C833 /* main.m */; };
-		6BD6DD9F22FD59FC00E9C833 /* JPChatBottomBaDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DD9E22FD59FC00E9C833 /* JPChatBottomBaDemoTests.m */; };
-		6BD6DDAA22FD59FC00E9C833 /* JPChatBottomBaDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DDA922FD59FC00E9C833 /* JPChatBottomBaDemoUITests.m */; };
+		6BD6DD9F22FD59FC00E9C833 /* JPChatBottomBarDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DD9E22FD59FC00E9C833 /* JPChatBottomBarDemoTests.m */; };
+		6BD6DDAA22FD59FC00E9C833 /* JPChatBottomBarDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DDA922FD59FC00E9C833 /* JPChatBottomBarDemoUITests.m */; };
 		6BD6DDBA22FD5A3B00E9C833 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DDB922FD5A3B00E9C833 /* ViewController.m */; };
 		6BD6DDC322FD5AD600E9C833 /* UIImageView+GifTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DDBF22FD5AD600E9C833 /* UIImageView+GifTool.m */; };
 		6BD6DDC422FD5AD600E9C833 /* UIView+JPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6DDC022FD5AD600E9C833 /* UIView+JPExtension.m */; };
@@ -93,7 +93,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6BD6DD8222FD59FB00E9C833 /* JPChatBottomBaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JPChatBottomBaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BD6DD8222FD59FB00E9C833 /* JPChatBottomBarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JPChatBottomBarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD6DD8522FD59FB00E9C833 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6BD6DD8622FD59FB00E9C833 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6BD6DD8822FD59FB00E9C833 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -102,11 +102,11 @@
 		6BD6DD9122FD59FC00E9C833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6BD6DD9322FD59FC00E9C833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BD6DD9422FD59FC00E9C833 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6BD6DD9A22FD59FC00E9C833 /* JPChatBottomBaDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JPChatBottomBaDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6BD6DD9E22FD59FC00E9C833 /* JPChatBottomBaDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPChatBottomBaDemoTests.m; sourceTree = "<group>"; };
+		6BD6DD9A22FD59FC00E9C833 /* JPChatBottomBarDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JPChatBottomBarDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BD6DD9E22FD59FC00E9C833 /* JPChatBottomBarDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPChatBottomBarDemoTests.m; sourceTree = "<group>"; };
 		6BD6DDA022FD59FC00E9C833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6BD6DDA522FD59FC00E9C833 /* JPChatBottomBaDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JPChatBottomBaDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6BD6DDA922FD59FC00E9C833 /* JPChatBottomBaDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPChatBottomBaDemoUITests.m; sourceTree = "<group>"; };
+		6BD6DDA522FD59FC00E9C833 /* JPChatBottomBarDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JPChatBottomBarDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BD6DDA922FD59FC00E9C833 /* JPChatBottomBarDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPChatBottomBarDemoUITests.m; sourceTree = "<group>"; };
 		6BD6DDAB22FD59FC00E9C833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BD6DDB922FD5A3B00E9C833 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6BD6DDBF22FD5AD600E9C833 /* UIImageView+GifTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+GifTool.m"; sourceTree = "<group>"; };
@@ -216,9 +216,9 @@
 		6BD6DD7922FD59FB00E9C833 = {
 			isa = PBXGroup;
 			children = (
-				6BD6DD8422FD59FB00E9C833 /* JPChatBottomBaDemo */,
-				6BD6DD9D22FD59FC00E9C833 /* JPChatBottomBaDemoTests */,
-				6BD6DDA822FD59FC00E9C833 /* JPChatBottomBaDemoUITests */,
+				6BD6DD8422FD59FB00E9C833 /* JPChatBottomBarDemo */,
+				6BD6DD9D22FD59FC00E9C833 /* JPChatBottomBarDemoTests */,
+				6BD6DDA822FD59FC00E9C833 /* JPChatBottomBarDemoUITests */,
 				6BD6DD8322FD59FB00E9C833 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -226,19 +226,17 @@
 		6BD6DD8322FD59FB00E9C833 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6BD6DD8222FD59FB00E9C833 /* JPChatBottomBaDemo.app */,
-				6BD6DD9A22FD59FC00E9C833 /* JPChatBottomBaDemoTests.xctest */,
-				6BD6DDA522FD59FC00E9C833 /* JPChatBottomBaDemoUITests.xctest */,
+				6BD6DD8222FD59FB00E9C833 /* JPChatBottomBarDemo.app */,
+				6BD6DD9A22FD59FC00E9C833 /* JPChatBottomBarDemoTests.xctest */,
+				6BD6DDA522FD59FC00E9C833 /* JPChatBottomBarDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6BD6DD8422FD59FB00E9C833 /* JPChatBottomBaDemo */ = {
+		6BD6DD8422FD59FB00E9C833 /* JPChatBottomBarDemo */ = {
 			isa = PBXGroup;
 			children = (
 				6BD6DDBD22FD5AA500E9C833 /* JPChatBottomBar */,
-				6BD6DE1822FD5B2C00E9C833 /* JPChatBottomBar.h */,
-				6BD6DE1922FD5B2C00E9C833 /* JPChatBottomBar.m */,
 				6BD6DD8522FD59FB00E9C833 /* AppDelegate.h */,
 				6BD6DD8622FD59FB00E9C833 /* AppDelegate.m */,
 				6BD6DD8822FD59FB00E9C833 /* ViewController.h */,
@@ -249,30 +247,32 @@
 				6BD6DD9322FD59FC00E9C833 /* Info.plist */,
 				6BD6DD9422FD59FC00E9C833 /* main.m */,
 			);
-			path = JPChatBottomBaDemo;
+			path = JPChatBottomBarDemo;
 			sourceTree = "<group>";
 		};
-		6BD6DD9D22FD59FC00E9C833 /* JPChatBottomBaDemoTests */ = {
+		6BD6DD9D22FD59FC00E9C833 /* JPChatBottomBarDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				6BD6DD9E22FD59FC00E9C833 /* JPChatBottomBaDemoTests.m */,
+				6BD6DD9E22FD59FC00E9C833 /* JPChatBottomBarDemoTests.m */,
 				6BD6DDA022FD59FC00E9C833 /* Info.plist */,
 			);
-			path = JPChatBottomBaDemoTests;
+			path = JPChatBottomBarDemoTests;
 			sourceTree = "<group>";
 		};
-		6BD6DDA822FD59FC00E9C833 /* JPChatBottomBaDemoUITests */ = {
+		6BD6DDA822FD59FC00E9C833 /* JPChatBottomBarDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				6BD6DDA922FD59FC00E9C833 /* JPChatBottomBaDemoUITests.m */,
+				6BD6DDA922FD59FC00E9C833 /* JPChatBottomBarDemoUITests.m */,
 				6BD6DDAB22FD59FC00E9C833 /* Info.plist */,
 			);
-			path = JPChatBottomBaDemoUITests;
+			path = JPChatBottomBarDemoUITests;
 			sourceTree = "<group>";
 		};
 		6BD6DDBD22FD5AA500E9C833 /* JPChatBottomBar */ = {
 			isa = PBXGroup;
 			children = (
+				6BD6DE1822FD5B2C00E9C833 /* JPChatBottomBar.h */,
+				6BD6DE1922FD5B2C00E9C833 /* JPChatBottomBar.m */,
 				6BD6DE2522FD5B4900E9C833 /* view */,
 				6BD6DE1B22FD5B3700E9C833 /* model */,
 				6BD6DDCF22FD5AF700E9C833 /* ImageResource */,
@@ -427,9 +427,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6BD6DD8122FD59FB00E9C833 /* JPChatBottomBaDemo */ = {
+		6BD6DD8122FD59FB00E9C833 /* JPChatBottomBarDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6BD6DDAE22FD59FC00E9C833 /* Build configuration list for PBXNativeTarget "JPChatBottomBaDemo" */;
+			buildConfigurationList = 6BD6DDAE22FD59FC00E9C833 /* Build configuration list for PBXNativeTarget "JPChatBottomBarDemo" */;
 			buildPhases = (
 				6BD6DD7E22FD59FB00E9C833 /* Sources */,
 				6BD6DD7F22FD59FB00E9C833 /* Frameworks */,
@@ -439,14 +439,14 @@
 			);
 			dependencies = (
 			);
-			name = JPChatBottomBaDemo;
+			name = JPChatBottomBarDemo;
 			productName = JPChatBottomBaDemo;
-			productReference = 6BD6DD8222FD59FB00E9C833 /* JPChatBottomBaDemo.app */;
+			productReference = 6BD6DD8222FD59FB00E9C833 /* JPChatBottomBarDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6BD6DD9922FD59FC00E9C833 /* JPChatBottomBaDemoTests */ = {
+		6BD6DD9922FD59FC00E9C833 /* JPChatBottomBarDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6BD6DDB122FD59FC00E9C833 /* Build configuration list for PBXNativeTarget "JPChatBottomBaDemoTests" */;
+			buildConfigurationList = 6BD6DDB122FD59FC00E9C833 /* Build configuration list for PBXNativeTarget "JPChatBottomBarDemoTests" */;
 			buildPhases = (
 				6BD6DD9622FD59FC00E9C833 /* Sources */,
 				6BD6DD9722FD59FC00E9C833 /* Frameworks */,
@@ -457,14 +457,14 @@
 			dependencies = (
 				6BD6DD9C22FD59FC00E9C833 /* PBXTargetDependency */,
 			);
-			name = JPChatBottomBaDemoTests;
+			name = JPChatBottomBarDemoTests;
 			productName = JPChatBottomBaDemoTests;
-			productReference = 6BD6DD9A22FD59FC00E9C833 /* JPChatBottomBaDemoTests.xctest */;
+			productReference = 6BD6DD9A22FD59FC00E9C833 /* JPChatBottomBarDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		6BD6DDA422FD59FC00E9C833 /* JPChatBottomBaDemoUITests */ = {
+		6BD6DDA422FD59FC00E9C833 /* JPChatBottomBarDemoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6BD6DDB422FD59FC00E9C833 /* Build configuration list for PBXNativeTarget "JPChatBottomBaDemoUITests" */;
+			buildConfigurationList = 6BD6DDB422FD59FC00E9C833 /* Build configuration list for PBXNativeTarget "JPChatBottomBarDemoUITests" */;
 			buildPhases = (
 				6BD6DDA122FD59FC00E9C833 /* Sources */,
 				6BD6DDA222FD59FC00E9C833 /* Frameworks */,
@@ -475,9 +475,9 @@
 			dependencies = (
 				6BD6DDA722FD59FC00E9C833 /* PBXTargetDependency */,
 			);
-			name = JPChatBottomBaDemoUITests;
+			name = JPChatBottomBarDemoUITests;
 			productName = JPChatBottomBaDemoUITests;
-			productReference = 6BD6DDA522FD59FC00E9C833 /* JPChatBottomBaDemoUITests.xctest */;
+			productReference = 6BD6DDA522FD59FC00E9C833 /* JPChatBottomBarDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -502,7 +502,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6BD6DD7D22FD59FB00E9C833 /* Build configuration list for PBXProject "JPChatBottomBaDemo" */;
+			buildConfigurationList = 6BD6DD7D22FD59FB00E9C833 /* Build configuration list for PBXProject "JPChatBottomBarDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -515,9 +515,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6BD6DD8122FD59FB00E9C833 /* JPChatBottomBaDemo */,
-				6BD6DD9922FD59FC00E9C833 /* JPChatBottomBaDemoTests */,
-				6BD6DDA422FD59FC00E9C833 /* JPChatBottomBaDemoUITests */,
+				6BD6DD8122FD59FB00E9C833 /* JPChatBottomBarDemo */,
+				6BD6DD9922FD59FC00E9C833 /* JPChatBottomBarDemoTests */,
+				6BD6DDA422FD59FC00E9C833 /* JPChatBottomBarDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -622,7 +622,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BD6DD9F22FD59FC00E9C833 /* JPChatBottomBaDemoTests.m in Sources */,
+				6BD6DD9F22FD59FC00E9C833 /* JPChatBottomBarDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,7 +630,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BD6DDAA22FD59FC00E9C833 /* JPChatBottomBaDemoUITests.m in Sources */,
+				6BD6DDAA22FD59FC00E9C833 /* JPChatBottomBarDemoUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,12 +639,12 @@
 /* Begin PBXTargetDependency section */
 		6BD6DD9C22FD59FC00E9C833 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6BD6DD8122FD59FB00E9C833 /* JPChatBottomBaDemo */;
+			target = 6BD6DD8122FD59FB00E9C833 /* JPChatBottomBarDemo */;
 			targetProxy = 6BD6DD9B22FD59FC00E9C833 /* PBXContainerItemProxy */;
 		};
 		6BD6DDA722FD59FC00E9C833 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6BD6DD8122FD59FB00E9C833 /* JPChatBottomBaDemo */;
+			target = 6BD6DD8122FD59FB00E9C833 /* JPChatBottomBarDemo */;
 			targetProxy = 6BD6DDA622FD59FC00E9C833 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -787,7 +787,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WCK3Q36U6V;
-				INFOPLIST_FILE = JPChatBottomBaDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JPChatBottomBarDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -804,7 +804,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WCK3Q36U6V;
-				INFOPLIST_FILE = JPChatBottomBaDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JPChatBottomBarDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -830,7 +830,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jonpai.www.JPChatBottomBaDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JPChatBottomBaDemo.app/JPChatBottomBaDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JPChatBottomBarDemo.app/JPChatBottomBarDemo";
 			};
 			name = Debug;
 		};
@@ -849,7 +849,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jonpai.www.JPChatBottomBaDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JPChatBottomBaDemo.app/JPChatBottomBaDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JPChatBottomBarDemo.app/JPChatBottomBarDemo";
 			};
 			name = Release;
 		};
@@ -892,7 +892,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6BD6DD7D22FD59FB00E9C833 /* Build configuration list for PBXProject "JPChatBottomBaDemo" */ = {
+		6BD6DD7D22FD59FB00E9C833 /* Build configuration list for PBXProject "JPChatBottomBarDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6BD6DDAC22FD59FC00E9C833 /* Debug */,
@@ -901,7 +901,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6BD6DDAE22FD59FC00E9C833 /* Build configuration list for PBXNativeTarget "JPChatBottomBaDemo" */ = {
+		6BD6DDAE22FD59FC00E9C833 /* Build configuration list for PBXNativeTarget "JPChatBottomBarDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6BD6DDAF22FD59FC00E9C833 /* Debug */,
@@ -910,7 +910,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6BD6DDB122FD59FC00E9C833 /* Build configuration list for PBXNativeTarget "JPChatBottomBaDemoTests" */ = {
+		6BD6DDB122FD59FC00E9C833 /* Build configuration list for PBXNativeTarget "JPChatBottomBarDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6BD6DDB222FD59FC00E9C833 /* Debug */,
@@ -919,7 +919,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6BD6DDB422FD59FC00E9C833 /* Build configuration list for PBXNativeTarget "JPChatBottomBaDemoUITests" */ = {
+		6BD6DDB422FD59FC00E9C833 /* Build configuration list for PBXNativeTarget "JPChatBottomBarDemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6BD6DDB522FD59FC00E9C833 /* Debug */,

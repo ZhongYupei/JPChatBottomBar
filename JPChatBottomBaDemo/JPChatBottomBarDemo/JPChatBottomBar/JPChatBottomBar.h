@@ -22,7 +22,7 @@ typedef NS_ENUM(NSUInteger,JPKeyBoardState) {
 OBJC_EXTERN NSString * const MsgAgentViewWillChangeNoti;
 OBJC_EXTERN NSString * const MsgAgentViewHeightInfoKey;
 
-@protocol JPMsgEditAgentDelegate <NSObject>
+@protocol JPChatBottomBarDelegate <NSObject>
 
 @optional
 /**
@@ -69,7 +69,7 @@ OBJC_EXTERN NSString * const MsgAgentViewHeightInfoKey;
 @property (copy, nonatomic) void (^msgEditAgentAudioBlock)(NSData *);
 
 
-@property (assign, nonatomic) id <JPMsgEditAgentDelegate> msgEditAgent;
+@property (assign, nonatomic) id <JPChatBottomBarDelegate> agent;
 
 /**
  *  初始化底部输入横条

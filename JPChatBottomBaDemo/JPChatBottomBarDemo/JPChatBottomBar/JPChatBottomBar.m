@@ -93,8 +93,8 @@ NSString * const MsgAgentViewHeightInfoKey = @"TextViewContentHeightInfoKey";
             [wSelf.helper jp_recorderStop];
             NSString * filePath = [wSelf.helper getfilePath];
             NSData * audioData = [NSData dataWithContentsOfFile:filePath];
-            if(wSelf.msgEditAgent && [wSelf.msgEditAgent respondsToSelector:@selector(msgEditAgentAudio:)]){
-                [wSelf.msgEditAgent msgEditAgentAudio:audioData];
+            if(wSelf.agent && [wSelf.agent respondsToSelector:@selector(msgEditAgentAudio:)]){
+                [wSelf.agent msgEditAgentAudio:audioData];
             }
             if(wSelf.msgEditAgentAudioBlock){
                 wSelf.msgEditAgentAudioBlock(audioData);
@@ -220,9 +220,9 @@ NSString * const MsgAgentViewHeightInfoKey = @"TextViewContentHeightInfoKey";
 }
 #pragma mark JPMoreInputViewDelegate
 - (void)clickItemOnMoreIVWithInfo:(NSDictionary *)dict {
-    if(self.msgEditAgent && [self.msgEditAgent respondsToSelector:@selector(msgEditAgentClickMoreIVItem:)]) {
+    if(self.agent && [self.agent respondsToSelector:@selector(msgEditAgentClickMoreIVItem:)]) {
         [self resignFirstResponder];
-        [self.msgEditAgent msgEditAgentClickMoreIVItem:dict];
+        [self.agent msgEditAgentClickMoreIVItem:dict];
     }
 }
 
@@ -239,15 +239,15 @@ NSString * const MsgAgentViewHeightInfoKey = @"TextViewContentHeightInfoKey";
 }
 - (void)inputView:(JPEmojiInputView *)inputView clickLargeEmoji:(JPEmojiModel *)model {
     // 点击大表情包 提供给外部
-    if(self.msgEditAgent && [self.msgEditAgent respondsToSelector:@selector(msgEditAgentSendBigEmoji:)]){
+    if(self.agent && [self.agent respondsToSelector:@selector(msgEditAgentSendBigEmoji:)]){
         NSData * imageData = [NSData dataWithContentsOfFile:model.imageFullPath];
-        [self.msgEditAgent msgEditAgentSendBigEmoji:imageData];
+        [self.agent msgEditAgentSendBigEmoji:imageData];
     }
 }
 // 点击了发送文本消息的按钮
 - (void)clickSendBtnInputView:(JPEmojiInputView *)inputView {
-    if(self.msgEditAgent && [self.msgEditAgent respondsToSelector:@selector(msgEditAgentSendText:)]){
-        [self.msgEditAgent msgEditAgentSendText:self.textView.text];
+    if(self.agent && [self.agent respondsToSelector:@selector(msgEditAgentSendText:)]){
+        [self.agent msgEditAgentSendText:self.textView.text];
     }
     if(self.msgEditAgentTextBlock){
         self.msgEditAgentTextBlock(self.textView.text);

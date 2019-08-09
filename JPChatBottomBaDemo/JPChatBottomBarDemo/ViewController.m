@@ -14,7 +14,7 @@
 
 #define EMOJI_CODE_TO_SYMBOL(x) ((((0x808080F0 | (x & 0x3F000) >> 4) | (x & 0xFC0) << 10) | (x & 0x1C0000) << 18) | (x & 0x3F) << 24)
 
-@interface ViewController () <JPMsgEditAgentDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>{
+@interface ViewController () <JPChatBottomBarDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>{
     NSMutableArray * selectedAssets ;
     NSMutableArray * selectedPhotos ;
 }
@@ -54,7 +54,7 @@
 #pragma mark 使用方式
     JPChatBottomBar * msgEditView = [[JPChatBottomBar alloc] initWithBarHeight:0 btnHeight:0];
     _msgEditView = msgEditView;
-    msgEditView.msgEditAgent = self;
+    msgEditView.agent= self;
     [self.view addSubview:msgEditView];
 #pragma mark 另一种获取系统自带表情包的方式
 //    int sym = EMOJI_CODE_TO_SYMBOL(0x1F600);
