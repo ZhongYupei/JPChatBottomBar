@@ -123,7 +123,7 @@
         
         button.y = 0;
         button.tag = index;
-        [button addTarget:self action:@selector(emojiGroupBtnAction:) forControlEvents:UIControlEventTouchDown];
+//        [button addTarget:self action:@selector(emojiGroupBtnAction:) forControlEvents:UIControlEventTouchUpInside];
         button.x = index * button.width;
         [_scrollView addSubview:button];
         
