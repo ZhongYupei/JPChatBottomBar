@@ -45,9 +45,6 @@ NS_ASSUME_NONNULL_BEGIN
  *  获取AttDict字典
  */
 + (NSDictionary <NSAttributedStringKey,id> *)getAttDict;
-
-
-
 @end
 
 

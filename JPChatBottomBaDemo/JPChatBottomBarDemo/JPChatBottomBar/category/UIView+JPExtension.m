@@ -91,19 +91,6 @@
     }
 }
 
-+ (CGFloat)jpEmojiIVKeyboardHeight {
-    if(IS_IPHONE_X) {
-        return 300;
-    }
-    else if (IS_IPHONE_6P){
-        return 240;
-    }else {
-        return 227;
-    }
-}
 
-//+ (CGFloat)jpEmojiIVKeyboardHeight {
-//
-//}
 
 @end

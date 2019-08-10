@@ -23,8 +23,5 @@
     _textAttachment = [[NSTextAttachment alloc] init];
     _textAttachment.image = emojiImage;
     _textAttachment.bounds = CGRectMake(0,  [JPAttributedStringConfig sharedConfig].font.descender, [JPAttributedStringConfig sharedConfig].font.lineHeight,[JPAttributedStringConfig sharedConfig].font.lineHeight );
-    
-    
-    
 }
 @end

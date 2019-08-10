@@ -61,16 +61,6 @@ NS_ASSUME_NONNULL_BEGIN
  *  @return 底层根据机型返回键盘的高度
  */
 + (CGFloat)jpDefaultKeyboardHeight;
-/**
- *  @return 底层开发者根据各个机型设置的表情包键盘高度
- */
-+ (CGFloat)jpEmojiIVKeyboardHeight;
-
-/**
- *  @return 底层开发者根据各个机型设置的更多键盘高度
- */
-+ (CGFloat)jpMoreIVKeyboardHeight;
-
 
 
 @end

@@ -266,42 +266,33 @@ NSString * const MsgAgentViewHeightInfoKey = @"TextViewContentHeightInfoKey";
         [self.textView deleteBackward];
         return;
     }else {
-        // 删除系统自带的表情包
-        NSRange lastRange = [souceText rangeOfComposedCharacterSequenceAtIndex:souceText.length - 1];
-        if(range.length >= 2) {
-            // 表示是系统自带的表情包
-            NSString * result = [souceText substringToIndex:lastRange.location];
-            self.textView.text = [self.textView.text stringByReplacingCharactersInRange:NSMakeRange(0, souceText.length) withString:result];
-        }else {
-            // 正则表达式匹配要替换的文字的范围
-            if([souceText hasSuffix:@"]"]){
-                // 表示该选取字段最后一个是表情包
-                if([[souceText substringWithRange:NSMakeRange(souceText.length-2, 1)] isEqualToString:@"]"]) {
-                    // 表示这只是一个单独的字符@"]"
-                    [self.textView deleteBackward];
-                    return;
-                }
-                // 正则表达式
-                NSString * pattern = @"\\[[a-zA-Z0-9\\u4e00-\\u9fa5]+\\]";
-                NSError *error = nil;
-                NSRegularExpression * re = [NSRegularExpression regularExpressionWithPattern:pattern options:NSRegularExpressionCaseInsensitive error:&error];if (!re) {NSLog(@"%@", [error localizedDescription]);}
-                NSArray *resultArray = [re matchesInString:souceText options:0 range:NSMakeRange(0, souceText.length)];
-                if(resultArray.count != 0) {
-                    /// 表情最后一段存在表情包字符串
-                    NSTextCheckingResult *checkingResult = resultArray.lastObject;
-                    NSString * resultStr = [souceText substringWithRange:NSMakeRange(0, souceText.length - checkingResult.range.length)];
-                    self.textView.text = [self.textView.text stringByReplacingCharactersInRange:NSMakeRange(0, souceText.length) withString:resultStr];
-                    self.textView.selectedRange = NSMakeRange(resultStr.length , 0);
-                }else {
-                    [self.textView deleteBackward];
-                }
+        // 正则表达式匹配要替换的文字的范围
+        if([souceText hasSuffix:@"]"]){
+            // 表示该选取字段最后一个是表情包
+            if([[souceText substringWithRange:NSMakeRange(souceText.length-2, 1)] isEqualToString:@"]"]) {
+                // 表示这只是一个单独的字符@"]"
+                [self.textView deleteBackward];
+                return;
+            }
+            // 正则表达式
+            NSString * pattern = @"\\[[a-zA-Z0-9\\u4e00-\\u9fa5]+\\]";
+            NSError *error = nil;
+            NSRegularExpression * re = [NSRegularExpression regularExpressionWithPattern:pattern options:NSRegularExpressionCaseInsensitive error:&error];if (!re) {NSLog(@"%@", [error localizedDescription]);}
+            NSArray *resultArray = [re matchesInString:souceText options:0 range:NSMakeRange(0, souceText.length)];
+            if(resultArray.count != 0) {
+                /// 表情最后一段存在表情包字符串
+                NSTextCheckingResult *checkingResult = resultArray.lastObject;
+                NSString * resultStr = [souceText substringWithRange:NSMakeRange(0, souceText.length - checkingResult.range.length)];
+                self.textView.text = [self.textView.text stringByReplacingCharactersInRange:NSMakeRange(0, souceText.length) withString:resultStr];
+                self.textView.selectedRange = NSMakeRange(resultStr.length , 0);
             }else {
-                // 表示最后一个不是表情包
                 [self.textView deleteBackward];
             }
+        }else {
+            // 表示最后一个不是表情包
+            [self.textView deleteBackward];
         }
     }
-    
     [self textViewDidChange:self.textView];
 }
 
