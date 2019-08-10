@@ -26,7 +26,12 @@
     CGFloat _subViewMarginToTop;
     CGFloat _currentTextViewHeight ;
     CGFloat _currentTextViewContentHeight;
+//
+//    CGRect _oldRect;
+//    CGRect _newRect;
 }
+@property (assign, nonatomic) CGRect oldRect;
+@property (assign, nonatomic) CGRect newRect;
 @property (strong, nonatomic) UIButton * changeStateBtn;      // 切换键盘状态（语音、文本）
 @property (assign, nonatomic) BOOL isAudioState;
 
@@ -156,14 +161,35 @@ NSString * const MsgAgentViewHeightInfoKey = @"TextViewContentHeightInfoKey";
         // 添加点击手势来使得从其他状态切换惠
         UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(textViewTapAction:)];
         [_textView addGestureRecognizer:tap];
-        [_textView addObserver:self forKeyPath:@"inputView" options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew context:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillChangeRect:) name:UIKeyboardWillChangeFrameNotification object:nil];
+        
     }
     return _textView;
 }
+- (void)keyboardWillChangeRect:(NSNotification *)noti {
+    NSValue * aValue =  noti.userInfo[UIKeyboardFrameBeginUserInfoKey];
+    self.oldRect = [aValue CGRectValue];
+    NSValue * newValue = noti.userInfo[UIKeyboardFrameEndUserInfoKey];
+    self.newRect = [newValue CGRectValue];
+   
+    
+    [UIView animateWithDuration:0.3 animations:^{
+        if(self.superview.y == 0) {
+            self.superview.y -= self.newRect.size.height;
+        }else {
+            self.superview.y -=(self.newRect.size.height - self.oldRect.size.height);
+        }
+    } completion:^(BOOL finished) {
+    }];
+}
 - (void)textViewTapAction:(UITapGestureRecognizer *)tap{
+    [self.textView becomeFirstResponder];
     if([self.textView isFirstResponder] && [self.textView isEditable])    return;
     _keyBoardState = JPKeyBoardStateTextView;
     self.textView.inputView = nil;
+    self.textView.editable = YES;
+    [self.textView becomeFirstResponder];
+
 }
 - (UIButton *)emojiBtn {
     if(!_emojiBtn) {
@@ -174,13 +200,17 @@ NSString * const MsgAgentViewHeightInfoKey = @"TextViewContentHeightInfoKey";
 }
 - (void)emojiViewPop:(UIButton *)button {
     JPLog(@"选择表情");
+    
     if(_keyBoardState == JPKeyBoardStateEmoji)      return;
+    [self.textView resignFirstResponder];
     _keyBoardState = JPKeyBoardStateEmoji;
     if(_isAudioState) {
         [self emojiAndMoreStateToTextViewState];
     }
-    self.textView.inputView = self.emojiIV;
     self.textView.editable = NO;
+    self.textView.inputView = self.emojiIV;
+    
+    [self.textView becomeFirstResponder];
 }
 // 切换成文本框输入模式
 - (void)emojiAndMoreStateToTextViewState {
@@ -192,6 +222,7 @@ NSString * const MsgAgentViewHeightInfoKey = @"TextViewContentHeightInfoKey";
         self.textView.hidden = NO;
     }];
     self.textView.inputView = nil;
+    [self.textView resignFirstResponder];
     [self textViewDidChange:self.textView];
     self.height = self.textView.height + 2 * _subViewMarginToTop;
     self.y = SCREEN_HEIGHT -self.height;
@@ -207,12 +238,14 @@ NSString * const MsgAgentViewHeightInfoKey = @"TextViewContentHeightInfoKey";
 - (void)moreViewAction:(UIButton *)button {
     JPLog(@"点击更多按钮");
     if(_keyBoardState == JPKeyBoardStateMore)   return;
+    [self.textView resignFirstResponder];
     _keyBoardState = JPKeyBoardStateMore;
     if(_isAudioState){
         [self emojiAndMoreStateToTextViewState];
     }
-    self.textView.inputView = self.moreIV;
     self.textView.editable = NO;
+    self.textView.inputView = self.moreIV;
+    [self.textView becomeFirstResponder];
 }
 #pragma mark JPMoreInputViewDelegate
 - (void)clickItemOnMoreIVWithInfo:(NSDictionary *)dict {
@@ -387,7 +420,7 @@ NSString * const MsgAgentViewHeightInfoKey = @"TextViewContentHeightInfoKey";
         _currentTextViewHeight =  _btnWH ;
         _currentTextViewContentHeight = self.textView.contentSize.height;
         _keyBoardState = JPKeyBoardStateNone;
-//        _emojiIV = [self emojiIV];
+
     }
     return self;
 }
@@ -453,7 +486,6 @@ NSString * const MsgAgentViewHeightInfoKey = @"TextViewContentHeightInfoKey";
             } completion:^(BOOL finished) {
                 [self.textView reloadInputViews];
                 [self.textView becomeFirstResponder];
-                
             }];
         }
     }
