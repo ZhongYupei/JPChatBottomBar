@@ -249,7 +249,9 @@ if(self.delegate && [self.delegate respondsToSelector:@selector(jpHelperRecorder
 
 ## '更多' 键盘 上面的Item
 `JPChatBottomBar`里面的‘更多’键盘与微信的类似。
+
 ![‘更多’键盘](https://user-gold-cdn.xitu.io/2019/8/10/16c7a2b7d2f472b6?w=368&h=148&f=png&s=12917)
+
 开发者在使用的时候如果想要键入不同的功能实现，只要在`/ImageResource/JPMoreBundle.bundle` 的`JPMorePackageList.plist`文件中添加相应的item
 
 ![JPMorePackageList.plist展示](https://user-gold-cdn.xitu.io/2019/8/10/16c7a2bd1bad1cab?w=792&h=301&f=png&s=32112)
